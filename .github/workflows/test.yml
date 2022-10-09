@@ -1,0 +1,9 @@
+name: my gitup CI/CD action
+on: [push]
+jobs: 
+  print-hello-world: 
+    runs-on: ubuntu-latest
+    steps: 
+      - run: echo 'Hello world!!!!!!!'
+      - run: echo 'this is step2 run'
+  
