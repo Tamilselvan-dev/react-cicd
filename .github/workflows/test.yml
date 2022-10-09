@@ -1,9 +1,8 @@
-name: my gitup CI/CD action
+name: first react CI/CD action workflow
 on: [push]
-jobs: 
-  print-hello-world: 
+jobs:
+  build-app: 
     runs-on: ubuntu-latest
-    steps: 
-      - run: echo 'Hello world!!!!!!!'
-      - run: echo 'this is step2 run'
-  
+    steps:
+      - uses: actions/checkout@v2
+      - run: tree
